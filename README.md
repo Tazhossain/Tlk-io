@@ -22,9 +22,6 @@ OWNER_ID=your_telegram_user_id
 DEFAULT_ROOM=lovezone
 DEFAULT_NICKNAME=Tom
 ```
-
-> ⚠️ Don't share this file — it's ignored in `.gitignore`.
-
 ---
 
 ## ▶️ Run the Bot
