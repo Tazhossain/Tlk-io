@@ -8,16 +8,34 @@ A Telegram bot + terminal client to chat in [tlk.io](https://tlk.io) rooms.
 
 ## 🚀 Setup
 
+### 1. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Create a `.env` File
+
+```env
+BOT_TOKEN=your_telegram_bot_token
+OWNER_ID=your_telegram_user_id
+DEFAULT_ROOM=lovezone
+DEFAULT_NICKNAME=Tom
+```
+
+> ⚠️ Don't share this file — it's ignored in `.gitignore`.
+
+---
+
+## ▶️ Run the Bot
+
 ### Telegram Bot
 ```bash
-pip install requests pyTelegramBotAPI
-# Set BOT_TOKEN and OWNER_ID in bot.py
 python bot.py
 ```
 
-### Terminal Client
+### Terminal Chat Client
 ```bash
-pip install requests
 python tlkio.py
 ```
 
@@ -29,7 +47,7 @@ python tlkio.py
 |----------------------|----------------------------------|
 | /join [room] [nick]  | Join a room                      |
 | /stop                | Leave the room                   |
-| .b/.i/.c/.st/.l/.q   | Bold, Italic, Code, etc.         |
+| .b/.i/.c/.st/.l/.q   | Markdown formatting              |
 | .s query             | Search image on Google           |
 
 ---
@@ -45,8 +63,8 @@ python tlkio.py
 ## ⚙️ Features
 
 - Join any `tlk.io` room
-- Real-time sync
-- Markdown & image search
+- Real-time Telegram ↔ Tlk.io bridge
+- Markdown support & image search
 - Works via Telegram or terminal
 
 ---
