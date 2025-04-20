@@ -14,7 +14,7 @@ A Telegram bot + terminal client to chat in [tlk.io](https://tlk.io) rooms.
 pip install -r requirements.txt
 ```
 
-### 2. Create a `.env` File
+### 2. Update `.env` File
 
 ```env
 BOT_TOKEN=your_telegram_bot_token
