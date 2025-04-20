@@ -9,12 +9,14 @@ from datetime import datetime
 import sys
 import os
 import platform
+from dotenv import load_dotenv
 
-BOT_TOKEN = "xxx"
-OWNER_ID = 123456789
+load_dotenv()
 
-DEFAULT_ROOM = "lovezone"
-DEFAULT_NICKNAME = "Tom"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+OWNER_ID = int(os.getenv("OWNER_ID", 0))
+DEFAULT_ROOM = os.getenv("DEFAULT_ROOM", "lovezone")
+DEFAULT_NICKNAME = os.getenv("DEFAULT_NICKNAME", "Tom")
 
 # Made by Taz
 # Telegram: @modsbytaz
